@@ -12,7 +12,7 @@
 
 ## Every Branch критериум
 1. User = null. Задачата треба да фрли RuntimeException.
-2. User = [Ana, abc123456789!, ana,damjanoska@yahoo.com]. User има username, password и email што ги задоволуваат сите услови и во 
+2. User = [Ana, abc123456789!, ana.damjanoska@yahoo.com]. User има username, password и email што ги задоволуваат сите услови и во 
 листата нема идентичен корисник.
 3. User = [null, 123, ana.damjanoska@yahoo.com] - User има username null, password-от е помал од 8 цифри и email-от е идентичен со 
 email од друг корисник.
