@@ -1,4 +1,4 @@
-## Ana Damjanoska 196080
+## Aна Дамјаноска 196080
 
 ## Control Flow Graph
 
@@ -21,4 +21,15 @@ email од друг корисник.
 5. User = [AnaDamjanoska, abcdefghi, ana.damjanoska] - User има точно username, password-от нема специјални карактери и email адресата
 не е точна (не содржи @).
 
+## Multiple Condition критериум
+if (user==null || user.getPassword()==null || user.getEmail()==null)
+
+1. Прв тест (T X X): User == null
+Се тестира функцијата за проверка дали username == null. Кога username == null, oчекуваме да фрли RuntimeException.
+3. Втор тест (F T X): User != null && user.password = null
+Се тестира функцијата кога ќе се вметне правилно username, но нема корисникот да вметне password. Повторно, очекуваме функцијата да фрли исклучок од типот RuntimeException.
+4. Трет тест (F F T): User != null && user.password != null && user.email == null
+Се тестира функцијата кога user и password != null, а емаил е null. Повторно го очекуваме истиот исклучок.
+5. Четврт тест (F F F): User != null && user.password != null && user.email != null
+Се тестира кога ниту еден(user, password, email) не е null.
 
