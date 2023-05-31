@@ -24,12 +24,12 @@ email од друг корисник.
 ## Multiple Condition критериум
 if (user==null || user.getPassword()==null || user.getEmail()==null)
 
-1. Прв тест (T X X): User == null
+1. Прв тест - исполнет е еден услов (T X X): User == null
 Се тестира функцијата за проверка дали username == null. Кога username == null, oчекуваме да фрли RuntimeException.
-3. Втор тест (F T X): User != null && user.password == null
+2. Втор тест - исполнети е вториот услов (F T X): User != null && user.password == null
 Се тестира функцијата кога ќе се вметне правилно username, но нема корисникот да вметне password. Повторно, очекуваме функцијата да фрли исклучок од типот RuntimeException.
-4. Трет тест (F F T): User != null && user.password != null && user.email == null
+3. Трет тест - исполнет е третиот услов (F F T): User != null && user.password != null && user.email == null
 Се тестира функцијата кога user и password != null, а емаил е null. Повторно го очекуваме истиот исклучок.
-5. Четврт тест (F F F): User != null && user.password != null && user.email != null
+4. Четврт тест - не е исполнет ниту еден услов (F F F): User != null && user.password != null && user.email != null
 Се тестира кога ниту еден(user, password, email) не е null.
 
